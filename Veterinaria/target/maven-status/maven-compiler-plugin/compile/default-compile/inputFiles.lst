@@ -1,10 +1,10 @@
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\server\EquipoService.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\server\IEquipoService.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\entity\Equipo.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\server\IClienteService.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\VeterinariaApplication.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\entity\Cliente.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\server\ClienteService.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\repository\ClienteRepository.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\controller\ClienteController.java
-C:\Users\Melissa Ruiz Cruz\OneDrive\Documentos\DOCUMENTOS PROGRA WEB\Veterinaria\src\main\java\com\veterinaria\repository\EquipoRepository.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\server\ClienteService.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\server\EquipoService.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\server\IClienteService.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\VeterinariaApplication.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\server\IEquipoService.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\repository\ClienteRepository.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\repository\EquipoRepository.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\entity\Equipo.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\controller\ClienteController.java
+C:\Users\User\OneDrive - Universidad Fidélitas\Documentos\NetBeansProjects\VeterinariaProject\Veterinaria\src\main\java\com\veterinaria\entity\Cliente.java
