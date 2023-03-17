@@ -28,23 +28,22 @@ a{
 }
 
 li a{
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     color: #a0d5ff;
     margin: 0;
     padding: 5px 15px;
-    border-radius:30px;  
+    border-radius:30px;
 }
 
 li a:hover{
-    background-color: #000;
-    color: #fff;
+    background-color:#fff ;
+    color: #000;
 }
 
 header{
-    background: url(../images/fondovete.jpg);
-    background-size: cover;
-    height: 100vh;
+    background-color: #fff;
 }
 .menu{
     display: flex;
@@ -58,7 +57,7 @@ header ul li{
     margin: 0 20px;
 }
 header ul li a{
-    color: white;
+    color: black;
 }
 .titular {
     text-align: center;
@@ -72,4 +71,39 @@ h1{
     margin: auto;
     margin-bottom: 40px;
     color: #a0d5ff;
+}
+
+
+.icon {
+    width:100px;
+    height:100px;
+    margin-left: 20%;
+}
+
+.feli{
+    width: 400px;
+    height: 300px;
+    margin-left: 100%;
+    margin-top:  0%;
+    display: absolute;
+}
+
+
+
+.titular::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h2{
+    text-align: center;
+    
+}
+
+h3{
+    
+}
+h4{
+    
 }
