@@ -1,0 +1,73 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 14 mar 2023, 15:44:01
+    Author     : Melissa Ruiz Cruz
+*/
+#encabezado{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #a0b9ff;
+    color: white;
+}
+#encabezado h1{
+    display: inline;
+}
+
+#menu{
+    position: absolute;
+    top:8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #a0b9ff;
+    background-color: #B9EAF4;
+    color: white;
+}
+
+#menu a{
+    background-color: white;
+}
+
+#menu a:hover{
+    background-color: black;
+    color: #a0b9ff;
+}
+
+#barralateral{
+    position: absolute;
+    top:12%;
+    left: 0;
+    height: 81%;
+    width: 20%;
+    background-color: #a0b9ff;
+    color: white;
+    padding: 5px;
+}
+
+#contenido{
+    position: absolute;
+    top:12%;
+    left: 20%;
+    height: 81%;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    overflow: auto;
+}
+
+#piepagina{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #a0b9ff;
+    text-align: center;
+    overflow: auto;
+}
