@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-
 /**
  *
  * @author Melissa Ruiz Cruz
@@ -42,4 +41,8 @@ public class ClienteService implements IClienteService  {
         clienteRepository.deleteById(id);
     } 
     
+      @Override
+    public Cliente findByNombre_propietario (String username){
+        return clienteRepository.findByNombre_propietario(username);
+    }
 }

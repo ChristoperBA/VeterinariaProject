@@ -15,5 +15,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ClienteRepository extends CrudRepository<Cliente,Long>  {
-    
+ Cliente findByNombre_propietario (String nombre);
 }

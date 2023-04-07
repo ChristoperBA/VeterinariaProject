@@ -18,5 +18,6 @@ public interface IClienteService {
     public Cliente getClienteById(long id);
     public void saveCliente(Cliente cliente);
     public void delete(long id);
+    public Cliente findByNombre_propietario(String username);
     
 }
