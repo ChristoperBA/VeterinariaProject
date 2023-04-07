@@ -1,12 +1,15 @@
 com\veterinaria\entity\Cliente.class
 com\veterinaria\entity\Equipo.class
+com\veterinaria\AppAuthenticationSuccessHandler.class
 com\veterinaria\repository\EquipoRepository.class
+com\veterinaria\SecurityConfig.class
 com\veterinaria\controller\ClienteController.class
 com\veterinaria\server\UserService.class
 com\veterinaria\server\Userprincipal.class
 com\veterinaria\VeterinariaApplication.class
 com\veterinaria\server\EquipoService.class
 com\veterinaria\repository\ClienteRepository.class
+com\veterinaria\WebConfig.class
 com\veterinaria\server\ClienteService.class
 com\veterinaria\server\IClienteService.class
 com\veterinaria\server\IEquipoService.class
