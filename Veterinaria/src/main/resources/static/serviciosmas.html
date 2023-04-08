@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Veterinaria San Martin De Porras</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>    
+    </head>
+    <body>
+        <!-- NAV -->
+        <header th:fragment="header">
+            <div class="container-fluid bcontent">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logovete.jpg" width="90" height="90" /></a>
+                    <div class = "ms-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctenos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <img src="images/iconservicio.png" class="rounded mx-auto d-block" alt="Este es un Icono" width="100" height="100" >
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ULTRASONIDO
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">En nuestra responsable práctica profesional es indispensable ofrecerle a nuestros clientes y a sus mascotas el pronto y efectivo diagnóstico, por eso, la ultrasonografía es el servicio idóneo.
+                        Si se sospecha de una masa o tumor es fácil de diagnosticar por medio de un ultrasonido,
+                        así como diagnósticos específicos como gastrointestinal, urinario y reproductor y problemas
+                        agudos de tórax o abdomen.</div>
+                    <img src="images/imagenUL.jpg" alt="ULTRASONIDO"/>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        LABORATORIO
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Contamos con  exámenes de hemograma con frotis, incluida la
+                        observación de hemoparásito.
+                        El hemograma es un servicio básico que permite la rápida atención e impresión diagnósticapara el estado básico del paciente, sea por algún problema de deshidratación, anemia,inmunosupresión, infección viral, bacteriana o algún síndrome asociado a enfermedades hematológicas, permitiendo una rápida atención y respuesta sobre el paciente y su cuadroclínico inmediato, permite además una valoración sobre 3 líneas celulares, eritrocitos“glóbulos rojos”, leucocitos “glóbulos blancos” y plaquetas, permitiendo saber de manerapresuntiva la condición, monitoreo y estabilidad de cada paciente. El frotis sanguíneo permite observar e identificar cuando uno de estos valores están en alerta tales como la cuantificación de una anemia, parásitos intracelulares, infecciones bacterianas y virales, en caso de plaquetas también nos permite saber si el paciente está generando una coagulopatía que pueda atentar con el paciente.</div>
+                    <img src="images/imagenLA.jpg" alt="LABORATORIO"/>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        CIRUGÍAS
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Contamos con un quirófano equipado con anestesia inhalatoria, electrobisturí, monitor de
+                        signos y cirujanos calificados para realizar procedimientos como cirugía del sistema urinario,
+                        digestivo, respiratorio, ocular, columna vertebral, de tórax, ortopédica, tejidos blandos, reconstructiva, oral y maxilofacial y radiografías con medio de contraste.</div>
+                    <img src="images/imagenCI.jpg" alt="CIRUGÍAS"/>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        RAYOS X
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Un mejor diagnóstico para su mascota es posible ahora por medio de nuestro servicio de
+                        rayos X digitales, que a través de la alta tecnología se obtienen mejores imágenes de
+                        tejidos blandos y duros, detección de hernias, anomalías en estómago, obstrucciones
+                        intestinales o presencia de cuerpos extraños en intestinos.</div>
+                    <img src="images/rayosx-perro.jpg" alt="RAYOS X"/>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        GROMMING
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">En nuestra responsable práctica profesional es indispensable ofrecerle a nuestros clientes y a sus mascotas el pronto y efectivo diagnóstico, por eso, la ultrasonografía es el servicio idóneo.
+                        Si se sospecha de una masa o tumor es fácil de diagnosticar por medio de un ultrasonido,
+                        así como diagnósticos específicos como gastrointestinal, urinario y reproductor y problemas
+                        agudos de tórax o abdomen.</div>
+                    <img src="images/imagenCorte.jpg" alt="GROMMING"/>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        CONSULTA
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Quedarse en casa y atender profesionalmente a su mascota es posible por medio de nuestra cobertura veterinaria domiciliaria.
+                        La valoración y cuidado efectuado por nuestros médicos altamente calificados se realiza en el área metropolitana o donde necesite este servicio.</div>
+                    <img src="images/imagenConsulta.jpg" alt="CONSULTA"/>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="text-center text-white"  style="background-color: #45637d">
+            <div class="container p-4">
+                <section class="mb-4">
+                    <h1> </h1>
+                    <img src="images/veterinario.png" width="80" height="80"/>
+                    <h2>El mejor cuidado es nuestra misión</h2>
+                    <p> 24/7 SERVICE. SAME DAY APPOINTMENTS ARE AVAILABLE.</p>
+                </section>
+
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/VeteSanMartindePorres/" role="button">
+                        <img src="images/facebook.png" width="35" height="35"/>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/vetesanmartindeporres/" role="button">
+                        <img src="images/instagram.png" width="35" height="35"/>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCcbKBeDd7_EJENLKG4fRqnQ" role="button">
+                        <img src="images/youtube.png" width="35" height="35"/>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://ul.waze.com/ul?ll=9.89783365%2C-84.08613682&navigate=yes&zoom=17" role="button">
+                        <img src="images/map.png" width="35" height="35"/>
+                        <i class="fab fa-direccion"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="tel:+50640001365" role="button">
+                        <img src="images/phone.png" width="35" height="35"/>
+                        <i class="fab fa-phone"></i>
+                    </a>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright
+            </div>
+        </footer>
+
+    </body>
+</html>
