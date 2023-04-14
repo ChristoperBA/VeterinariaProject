@@ -23,53 +23,56 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    
+
     @Autowired
     private UserService userDetailsService;
-    
+
     @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();      
-    }
-    @Bean
-    public UserService getUserService(){
-        return new UserService (); 
-}
-    
- @Bean
-    DaoAuthenticationProvider authenticationProvider (){
-       DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
-       daoAuthenticationProvider.setPasswordEncoder (passwordEncoder ());
-       daoAuthenticationProvider.setUserDetailsService (getUserService());
-       return daoAuthenticationProvider;
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 
- @Bean
-    public AuthenticationSuccessHandler appAuthenticationSuccessHandler () {
+    @Bean
+    public UserService getUserService() {
+        return new UserService();
+    }
+
+    @Bean
+    DaoAuthenticationProvider authenticationProvider() {
+        DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
+        daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
+        daoAuthenticationProvider.setUserDetailsService(getUserService());
+        return daoAuthenticationProvider;
+    }
+
+    @Bean
+    public AuthenticationSuccessHandler appAuthenticationSuccessHandler() {
         return new AppAuthenticationSuccessHandler();
     }
-    
-    public SecurityConfig (UserService userPrincipalDetailsService) {
+
+    public SecurityConfig(UserService userPrincipalDetailsService) {
         this.userDetailsService = userPrincipalDetailsService;
     }
-    
+
     @Override
-    protected void configure (AuthenticationManagerBuilder auth) {
-        auth.authenticationProvider (authenticationProvider());
+    protected void configure(AuthenticationManagerBuilder auth) {
+        auth.authenticationProvider(authenticationProvider());
     }
 
-
- // El siguiente metodo funciona para hacer la autenticacion del usuario
+    // El siguiente metodo funciona para hacer la autenticacion del usuario
     @Override
-    protected void configure (HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers ("/persona","/login")
-                .hasRole ("ADMIN")
-                .antMatchers ("/personasN", "/persona","/","/login")
-                .hasAnyRole ("USER","VENDEDOR","ADMIN")
+                .antMatchers("/persona", "/login")
+                .hasRole("ADMIN")
+                .antMatchers("/personasN", "/persona", "/", "/login")
+                .hasAnyRole("USER", "VENDEDOR", "ADMIN")
                 .anyRequest () .authenticated ()
                 .and()
-                .formLogin();
+                .formLogin()
+                .loginPage("/login").permitAll().defaultSuccessUrl("/persona",true).and().logout()
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/");
     }
     
 }
