@@ -13,28 +13,6 @@ body{
     padding: 0;
     font-family:'Merriweather', serif;
 }
-.tiendaFoto{
-    float: right;
-    margin-right: 10%;
-
-
-}
-h1{
-margin-left: 2%;
-color: rgb(56, 109, 255);
-
-}
-.descripcion{
-    margin-left: 2%;
-    align-items: center;
-    width: 60%;
-    color: rgb(0, 0, 0);
-    font-size: 1.2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: 1px solid black;
-    padding: 0.5em;
-}
 #encabezado{
     position: absolute;
     top:0;
@@ -162,10 +140,10 @@ header{
 .container-cart-products{
     position: absolute;
     background-color: #f8f8f8;
-    top: 65%;
+    top: 30%;
     right: 80px;
     width: 350px;
-    height: 240px;
+    height: 160px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -232,6 +210,8 @@ header{
 
 
 
+
+
 /* Main Items */
 .container-items{
     display: grid;
@@ -244,7 +224,6 @@ header{
 
 
 .item{
-    /* border: 0.2px solid black; */
     border-radius: 10px;
     margin-top:30px;
     margin-right: 2%;
