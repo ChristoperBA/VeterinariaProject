@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Tienda</title>
         <link rel="stylesheet" href="css/productos.css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,75 +31,82 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </nav>
             </div>
         </header>
-
+		
 <h1>Tienda</h1>
-
-			<div class="container-icon">
-				<div class="container-cart-icon">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="icon-cart"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-						/>
-					</svg>
-					<div class="count-products">
-						<span id="contador-productos">0</span>
-					</div>
-				</div>
-
-				<div class="container-cart-products hidden-cart">
-					<div class="row-product hidden">
-						<div class="cart-product">
-							<div class="info-cart-product">
-								<span class="cantidad-producto-carrito">1</span>
-								<p class="titulo-producto-carrito">Productos</p>
-								<span class="precio-producto-carrito">$80</span>
-							</div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="icon-close"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
-						</div>
-					</div>
-
-					<div class="cart-total hidden">
-						<h3>Total:</h3>
-						<span class="total-pagar">$200</span>
-					</div>
-					<p class="cart-empty">El carrito está vacío</p>
+<img  class="tiendaFoto" src="/Veterinaria/src/main/resources/static/images/logovete.jpg" height="200px" width="200px" alt="Tienda">
+<p class="descripcion">Somos un establecimiento especializado en la venta de productos y servicios relacionados con la salud y
+	 el bienestar de las mascotas y animales domésticos. En una tienda veterinaria se pueden encontrar 
+	 productos para el cuidado y alimentación de los animales, como alimentos especializados, vitaminas,
+	suplementos, juguetes y accesorios. Además,  ofrecemos servicios veterinarios como consultas, 
+	vacunaciones, desparasitaciones, tratamientos médicos y cirugías menores. 
+</p>
+<br>
+		</header>
+		<div class="container-icon">
+			<div class="container-cart-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
 				</div>
 			</div>
-		</header>
-        <br><br><br><br><br><br>
+
+			<div class="container-cart-products hidden-cart">
+				<div class="row-product hidden">
+					<div class="cart-product">
+						<div class="info-cart-product">
+							<span class="cantidad-producto-carrito">1</span>
+							<p class="titulo-producto-carrito">Productos</p>
+							<span class="precio-producto-carrito">$80</span>
+						</div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="cart-total hidden">
+					<h3>Total:</h3>
+					<span class="total-pagar">$200</span>
+				</div>
+				<p class="cart-empty">El carrito está vacío</p>
+			</div>
+		</div>
+        <br><br><br><br>
 		<div class="container-items">
 			<div class="item">
 				<figure>
 					<img
-						src="/Veterinaria/src/main/resources/static/imagescris/collar.png"
+						src="/Veterinaria/src/main/resources/static/imagescris/airtag.png"
 						alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto1</h2>
-					<p class="price">$80</p>
+					<h2>Air Tag</h2>
+					<p class="price">$30</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
@@ -111,20 +118,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto2</h2>
-					<p class="price">$20</p>
+					<h2>Collar</h2>
+					<p class="price">$40</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
 			<div class="item">
 				<figure>
 					<img
-                    src="/Veterinaria/src/main/resources/static/imagescris/collar.png"
+                    src="/Veterinaria/src/main/resources/static/imagescris/Comida.jpg"
                     alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto3</h2>
+					<h2>Diamond Food</h2>
 					<p class="price">$50</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
@@ -132,105 +139,178 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 			<div class="item">
 				<figure>
 					<img
-                    src="/Veterinaria/src/main/resources/static/imagescris/collar.png"
+                    src="/Veterinaria/src/main/resources/static/imagescris/Comida2.jpg"
                     alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto4</h2>
-					<p class="price">$90</p>
+					<h2>Diamond Naturals</h2>
+					<p class="price">$50</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
 			<div class="item">
 				<figure>
 					<img
-                    src="/Veterinaria/src/main/resources/static/imagescris/collar.png"
+                    src="/Veterinaria/src/main/resources/static/imagescris/salvavidas.jpg"
                     alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto5</h2>
-					<p class="price">$50</p>
+					<h2>Salvavidas</h2>
+					<p class="price">$100</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
             <div class="item">
 				<figure>
 					<img
-                    src="/Veterinaria/src/main/resources/static/imagescris/collar.png"
+                    src="/Veterinaria/src/main/resources/static/imagescris/booster.jpg"
                     alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto5</h2>
-					<p class="price">$50</p>
+					<h2>Booster</h2>
+					<p class="price">$55</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
             <div class="item">
 				<figure>
 					<img
-                    src="/Veterinaria/src/main/resources/static/imagescris/collar.png"
+                    src="/Veterinaria/src/main/resources/static/imagescris/Fresa.jpg"
                     alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto5</h2>
-					<p class="price">$50</p>
+					<h2>Casa Estilo Fresa</h2>
+					<p class="price">$70</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
             <div class="item">
 				<figure>
 					<img
-                    src="/Veterinaria/src/main/resources/static/imagescris/collar.png"
+                    src="/Veterinaria/src/main/resources/static/imagescris/puff.jpg"
                     alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Producto5</h2>
+					<h2>Cama puff</h2>
+					<p class="price">$65</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/Dorito.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Jugete Dorito</h2>
+					<p class="price">$15</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/arena.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Arena Gato</h2>
+					<p class="price">$8</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/cortaunas.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Corta Uñas</h2>
+					<p class="price">$10</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/guante.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Guante Quita Pelo</h2>
+					<p class="price">$14</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			
+			<div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/poste.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Poste para Gatos</h2>
+					<p class="price">$22</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div><div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/jaula.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Jaula</h2>
 					<p class="price">$50</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/bebedero.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Bebedero</h2>
+					<p class="price">$40</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                    src="/Veterinaria/src/main/resources/static/imagescris/comedero.jpg"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Comedero</h2>
+					<p class="price">$30</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
 		</div>
-
 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 </body>
 <h1>Promociones</h1>
 
+ 
 <!-- Footer -->
 <footer class="text-center text-white"  style="background-color: #45637d">
         <div class="container p-4">
