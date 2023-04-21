@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org"    
+      xmlns:sec="http://thymeleaft.org/extras/spring-security">
+    <head>
+        <title>Iniciar Sesion</title>
+
+        <link rel="stylesheet"  th:href="@{/css/Cartelera.css}">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/"><img th:src="@{/images/main_logo.png}" class='logo' alt="Este es mi logo"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item" ><a class="nav-link" href="/" th:text="#{plantilla.home}"/></li>
+                            <li class="nav-item"><a class="nav-link" href="cartelera"th:text="#{plantilla.cartelera}"/></li>
+                            <li class="nav-item"><a class="nav-link" href="proximos_Estrenos"th:text="#{plantilla.proximos_estrenos}"/></li>
+                            <li class="nav-item"><a class="nav-link" href="salas_Formatos"th:text="#{plantilla.salas_formatos}"/></li>
+                            <li sec:authorize="isAnonymous()" class="nav-item"><a class="nav-link active" href="login" th:text="#{plantilla.iniciar_sesion}"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                            <li sec:authorize="isAuthenticated()" class="nav-item"><a class="nav-link" th:href="@{/logout}" th:text="#{plantilla.cerrar_sesion}"><i class="fa-solid fa-lock"></i></a></li>
+                            <li sec:authorize="hasRole('ROLE_Admin')" class="nav-item"><a class="nav-link" th:href="@{/admin/cartelera}">Admin</a></li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                </div>
+            </nav>
+        <section class="vh-100 gradient-custom">
+            
+            <div class="container mt-5">
+            <div style="width:600px;margin-left: auto;margin-right: auto;padding: 24px;">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa fa-user"></i> Please Login
+                    </div>
+                    <div class="card-block" style="padding: 24px;">
+                        <form name="f" th:action="@{/login}" method="post">
+                            <fieldset>
+                                <!-- Thymeleaf + Spring Security error display -->
+                                <div th:if="${param.error}" class="alert alert-danger">
+                                    Invalid username and password.
+                                </div>
+                                <div th:if="${param.logout}" class="alert alert-success">
+                                    You have been logged out.
+                                </div>
+                                <!-- Login Controls -->
+                                <div class="form-group">
+                                    <label for="txtUsername">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                           placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtPassword">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                           placeholder="Password">
+                                </div>
+                                <!-- Login Button -->
+                                <div class="form-actions" style="margin-top: 12px;">
+                                    <button type="submit" class="btn btn-success">Log in</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        
+                         <a class="mt-5" href="/usuarios/crear" role="button">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </body>
+
+</html>
