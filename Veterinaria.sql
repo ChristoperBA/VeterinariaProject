@@ -92,7 +92,6 @@ CREATE TABLE `resenas`(
  PRIMARY KEY (`idResena`,`idUsuario`),
  KEY `fk_resenas_usuario` (`idUsuario`),
  CONSTRAINT `fk_resenas_usuario` FOREIGN KEY (`idUsuario`) REFERENCES `Usuarios` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-
 );
 -- Tabla Citas
 CREATE TABLE `citas`(
@@ -111,6 +110,15 @@ CREATE TABLE `promocionesProductos`(
 	KEY `fk_promocion_productos` (`idProducto`),
 	CONSTRAINT `fk_promocion_productos`  FOREIGN KEY (`idProducto`) REFERENCES `productos` (`idProducto`) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
+
+-- Tabla para guardaimagenesimagenesr las imagenes
+CREATE TABLE `Imagenes`(
+`idpic` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+`caption` VARCHAR(45) NOT NULL,
+`img` LONGBLOB NOT NULL,
+PRIMARY KEY(`idpic`)
+)ENGINE = InnoDB;
+
 
 -- =================================================================================================== 
 -- Insert de personas
@@ -193,4 +201,7 @@ SELECT * FROM `Usuarios`;
 SELECT * FROM `resenas`;
 -- Vista de citas 
 SELECT * FROM `citas`;
+
+-- Vista de imagenes 
+SELECT * FROM `Imagenes`;
  -- ===================================================================================================
