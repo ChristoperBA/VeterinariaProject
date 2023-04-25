@@ -13,6 +13,89 @@ body{
     padding: 0;
     font-family:'Merriweather', serif;
 }
+.banner_description h1{
+    font-weight: 600px;
+    font-size: 3em;
+}
+.banner_description p{
+    opacity: 0.8;
+    margin: 2em 0;
+    color:#fff;
+}
+.banner_description {
+    margin-left: 5%;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #ffffff;
+ 
+ }
+.banner_description a{
+    border: 2px solid rgb(69, 68, 68);
+    padding: 0.6em 3.5em;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.9em;
+    transition: all .25s;
+}
+.banner_description a:hover{
+   background: #ffffff;
+   color: #000;
+
+}
+.banner{
+    width: 100%;
+    background-color: yellow;
+    height: 700px;
+    display: flex;
+    text-align: left;
+    align-items:center ;
+    background: center fixed url(/Veterinaria/src/main/resources/static/imagescris/fondo.jpg);
+}
+.banner_description{
+    width: 90%;
+    max-width: 1000px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.descripcion{
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(35, 10, 229);
+    line-height: 2;
+    padding: 1%;
+    text-align: justify;
+    left: 0;
+    margin-right: 50%;
+    margin-left: 3%;
+    }
+.tiendaFoto{
+    float: right;
+    margin-right: 20%;
+}
 #encabezado{
     position: absolute;
     top:0;
